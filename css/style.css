@@ -11,10 +11,9 @@ body {
 header {
     padding: 20px;
     background: rgb(30,30,30);
-}
-
-ul {
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 li {
