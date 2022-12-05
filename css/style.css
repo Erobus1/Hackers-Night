@@ -43,3 +43,17 @@ a {
     width: 100%;
     text-shadow: 0 0 10px black;
 }
+
+footer {
+    background: rgb(30,30,30);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
