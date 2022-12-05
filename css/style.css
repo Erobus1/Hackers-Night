@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background: blue;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    text-decoration: none;
+    display: inline;
+    margin: 0 20px;
+}
+
+a {
+    font-size: 1.5em;
+}
+
