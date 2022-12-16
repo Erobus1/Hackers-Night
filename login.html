@@ -18,14 +18,29 @@
             </ul>
         </header>
         <main>
-            <div class="banner-container">
-                <img src="banner.png" alt="Banner" width="100%" class="banner">
-                <h1 class="banner-text">Wir lieben Fruit!</h1>
-            </div>
+            <p class="login">Benutzername: </p>
+            <input class="login" type="text" id="user">
+            <br>
+            <p class="login">Passwort: </p>
+            <input class="login" type="password" id="password">
+            <br>
+            <button class="login" onclick="log()">Log in</button>
         </main>
         <footer>
             <a href="#">Impressum</a>
         </footer>
+
+        <script>
+            function log() {
+                const { body } = document;
+                const usr = document.getElementById("user").value;
+                const pwd = document.getElementById("password").value;
+
+                if (usr.length == 0) return;
+                if (usr == pwd) location.replace("./index.html")
+            }
+        </script>
+
     </body>
 
 
