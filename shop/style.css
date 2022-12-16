@@ -80,4 +80,35 @@ footer > a {
     margin: 10px;
     width: 200px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.item-image {
+    height: 80px;
+}
+
+.item-name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.item-button {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    transition: all 200ms;
+}
+
+.item-button:hover {
+    background:rgb(255, 217, 0);
 }
