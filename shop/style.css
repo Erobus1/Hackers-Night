@@ -70,3 +70,7 @@ footer > a {
     text-decoration: none;
     font-size: 1em;
 }
+
+.item-container {
+    background: rgb(200, 200, 200);
+}
