@@ -22,10 +22,28 @@
                 <img src="banner.png" alt="Banner" width="100%" class="banner">
                 <h1 class="banner-text">Wir lieben Fruit!</h1>
             </div>
+            <p id="jstest">text</p>
+            <p>abc</p>
         </main>
         <footer>
             <a href="#">Impressum</a>
         </footer>
+
+        <script>
+            function httpGet(theUrl, callback) {
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function() { 
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                    callback(xmlHttp.responseText);
+                }
+                xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+                xmlHttp.send(null);
+            }
+
+            httpGet("https://hackersnight-ee17.restdb.io/rest/test", res => {
+                //document.getElementById("jstest").innerText = JSON.parse(res)[0].text
+            })
+        </script>
     </body>
 
 
